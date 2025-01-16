@@ -1,0 +1,10 @@
+apiVersion: metallb.io/v1beta2
+kind: BGPPeer
+metadata:
+  name: my-bgppeer-1
+  namespace: metallb-system
+spec:
+  myASN: 64500
+  peerASN: 64530
+  peerAddress: 10.10.10.253
+  bfdProfile: my-lovely-bfdprofile
